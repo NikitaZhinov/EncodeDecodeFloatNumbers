@@ -14,26 +14,24 @@ string to2(double number);
 int to10(string number2);
 
 int main() {
-    setlocale(LC_ALL, "rus");
-
     double number;
     string number2;
     int coding;
 
-    cout << "0 - половинная точность\n";
-    cout << "1 - одинарная точность\n";
-    cout << "2 - двойная точность\n";
+    cout << "0 - half precision\n";
+    cout << "1 - single precision\n";
+    cout << "2 - double precision\n";
 
-    cout << "Выберите номер точности: ";
+    cout << "Select the precision number: ";
     cin >> TO4NOST;
 
-    cout << "0 - закодировать\n";
-    cout << "1 - декодировать\n";
+    cout << "0 - encode\n";
+    cout << "1 - decode\n";
 
-    cout << "Выберите что делать: ";
+    cout << "Choose what to do: ";
     cin >> coding;
 
-    cout << "Введите число: ";
+    cout << "Enter a number: ";
     switch (coding) {
     case 0:
         cin >> number;
@@ -45,7 +43,7 @@ int main() {
         break;
     
     default:
-        cout << "Ты больной?\n";
+        cout << "Are you sick?\n";
     }
 
     return 0;
